@@ -1,0 +1,12 @@
+{
+  "name": "tecece",
+  "private": true,
+  "scripts": {
+    "build:site": "esbuild src/site.js --bundle --minify --outfile=assets/site.min.js",
+    "build:admin": "esbuild src/admin.js --bundle --minify --outfile=assets/admin.min.js",
+    "build": "npm run build:site && npm run build:admin"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}
